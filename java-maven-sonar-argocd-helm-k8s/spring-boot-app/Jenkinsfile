@@ -42,6 +42,7 @@ pipeline {
             mvn sonar:sonar \
               -Dsonar.login=$SONAR_AUTH_TOKEN \
               -Dsonar.host.url=$SONAR_URL
+              -Dsonar.maven.plugin.version=4.0.0.4121
           '''
         }
       }
